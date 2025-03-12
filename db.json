@@ -1,0 +1,50 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Alejandro Martín",
+      "username": "alejandroM",
+      "email": "alejandro.martin@gmail.com",
+      "phone": "+34 612 345 678",
+      "address": "Calle Mayor, 12, Madrid, Spain",
+      "avatar": "https://i.pravatar.cc/150?img=8"
+    },
+    {
+      "id": 2,
+      "name": "Lucía Gómez",
+      "username": "luciaG",
+      "email": "lucia.gomez@gmail.com",
+      "phone": "+34 623 456 789",
+      "address": "Avenida de la Constitución, 45, Barcelona, Spain",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Fernández",
+      "username": "carlosF",
+      "email": "carlos.fernandez@gmail.com",
+      "phone": "+34 634 567 890",
+      "address": "Paseo del Prado, 28, Valencia, Spain",
+      "avatar": "https://i.pravatar.cc/150?img=12"
+    },
+    {
+      "id": 4,
+      "name": "Sofía Ruiz",
+      "username": "sofiaR",
+      "email": "sofia.ruiz@gmail.com",
+      "phone": "+34 645 678 901",
+      "address": "Calle Gran Vía, 22, Sevilla, Spain",
+      "avatar": "https://i.pravatar.cc/150?img=32"
+    },
+    {
+      "id": 5,
+      "name": "Mateo Navarro",
+      "username": "mateoN",
+      "email": "mateo.navarro@gmail.com",
+      "phone": "+34 656 789 012",
+      "address": "Carrer de la Pau, 10, Bilbao, Spain",
+      "avatar": "https://i.pravatar.cc/150?img=47"
+    }
+  ]
+}
+

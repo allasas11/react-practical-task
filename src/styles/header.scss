@@ -1,0 +1,36 @@
+header {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+  }
+
+.navigation li {
+    margin: 0rem 2rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none; 
+    font-size: 0.75rem;
+    padding: 0.5rem 0rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.navigation a:hover {
+    color: lightgreen; 
+}
+
+.navigation .active {
+    color: lightgreen; 
+}
