@@ -1,11 +1,15 @@
-import styles from "../styles/CustomersPage.module.css"
 
+import CustomersList from '../components/CustomersList';
+import { CustomersPageContextProvider } from '../context/CustomersPageContextProvider';
+import styles from '../styles/CustomersPage.module.css'
 
-const CustomersPage:React.FC = () => {
+const CustomersPage: React.FC = () => {
     return (
-        <div className={styles.mainContainer}>
-            <h1>Customers page</h1>
-        </div>
+        <CustomersPageContextProvider>
+            <div className={styles.customersContainer}>
+                <CustomersList />
+            </div>
+        </CustomersPageContextProvider>
     )
 }
-export default CustomersPage
+export default CustomersPage;

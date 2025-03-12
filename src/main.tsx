@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
       <Header />
         <ContainerMain>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route index element={<HomePage />} />
             <Route path="/customers" element={<CustomersPage />} />
           </Routes>
         </ContainerMain>

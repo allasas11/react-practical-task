@@ -1,7 +1,7 @@
 {
   "customers": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Alejandro Martín",
       "username": "alejandroM",
       "email": "alejandro.martin@gmail.com",
@@ -10,7 +10,7 @@
       "avatar": "https://i.pravatar.cc/150?img=8"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Lucía Gómez",
       "username": "luciaG",
       "email": "lucia.gomez@gmail.com",
@@ -19,7 +19,7 @@
       "avatar": "https://i.pravatar.cc/150?img=5"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Carlos Fernández",
       "username": "carlosF",
       "email": "carlos.fernandez@gmail.com",
@@ -28,7 +28,7 @@
       "avatar": "https://i.pravatar.cc/150?img=12"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Sofía Ruiz",
       "username": "sofiaR",
       "email": "sofia.ruiz@gmail.com",
@@ -37,14 +37,13 @@
       "avatar": "https://i.pravatar.cc/150?img=32"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Mateo Navarro",
       "username": "mateoN",
       "email": "mateo.navarro@gmail.com",
       "phone": "+34 656 789 012",
       "address": "Carrer de la Pau, 10, Bilbao, Spain",
-      "avatar": "https://i.pravatar.cc/150?img=47"
+      "avatar": "https://i.pravatar.cc/150?img=55"
     }
   ]
 }
-

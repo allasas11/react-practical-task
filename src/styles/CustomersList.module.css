@@ -1,0 +1,14 @@
+.pageTitle {
+    text-align: center;
+    color: lightgreen;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+.customersWrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
