@@ -12,7 +12,7 @@ const CustomersList:React.FC = () => {
             <h2 className={styles.pageTitle}>{customers.length > 0? 'Customers' : 'No customers'}</h2>
 
             <div className={styles.createLinkContainer}>
-                <NavLink to="/create-new-customer" className={({ isActive }) => isActive ? styles.activeLink : styles.createLink} > Create new customer </NavLink>
+                <NavLink to="/create-customer" className={({ isActive }) => isActive ? styles.activeLink : styles.createLink} > Create new customer </NavLink>
             </div>
 
             <div className={styles.customersContainer}>

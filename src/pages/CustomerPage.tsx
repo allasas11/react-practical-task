@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { fetchCustomerById } from "../api/customerApi";
 import { Customer } from "../reducers/customersReducer";
 import styles from "../styles/CustomerPage.module.css";
 // @ts-ignore
-import { BallTriangle } from 'react-loading-components'
+import BallTriangle from 'react-loading-components';
 
 const CustomerPage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -17,6 +17,7 @@ const CustomerPage: React.FC = () => {
             try {
                 if (!id) return;
                 const customerData = await fetchCustomerById(Number(id));
+                console.log("Fetched Customer Data:", customerData);
                 setCustomer(customerData);
             } catch (error) {
                 setError("Failed to fetch customer details.");
@@ -42,6 +43,9 @@ const CustomerPage: React.FC = () => {
                 <p>Email: {email}</p>
                 <p>Phone: {phone}</p>
                 <p>Address: {address}</p>
+                <NavLink to={`/customers/${id}/edit`} className={styles.editLink}>
+                    Edit Customer
+                </NavLink>
             </div>
         </div>
     );

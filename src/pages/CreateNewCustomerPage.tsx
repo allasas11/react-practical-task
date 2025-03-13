@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { useCustomers } from '../context/CustomersPageContextProvider';
 import { Customer } from '../reducers/customersReducer';
 import styles from '../styles/CreateNewCustomerPage.module.css'
+import { useNavigate } from 'react-router-dom';
 
 const CreateNewCustomerPage: React.FC = () => {
     const { customers, addNewCustomer } = useCustomers();
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: '',
         username: '',
@@ -47,7 +49,7 @@ const CreateNewCustomerPage: React.FC = () => {
             address: '',
             avatar: ''
         }); 
-
+        navigate('/customers')
     };
 
     return (
