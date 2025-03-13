@@ -25,6 +25,9 @@ createRoot(document.getElementById('root')!).render(
               <Route path="/create-customer" element={<CreateNewCustomerPage />} />
               <Route path="/customers/:id/edit" element={<EditCustomerPage />} />
             </Routes>
+            <Routes>
+              
+            </Routes>
           </ContainerMain>
         <Footer />
       </RootContextProvider>

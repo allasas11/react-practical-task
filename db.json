@@ -1,4 +1,36 @@
 {
+  "locations": [
+    {
+      "id": "1",
+      "name": "Madrid Bakery",
+      "address": "Calle Mayor, 12, Madrid, Spain",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/e9/d0/ad/entrada-y-barra.jpg?w=1000&h=-1&s=1"
+    },
+    {
+      "id": "2",
+      "name": "Barcelona Bakery",
+      "address": "Avenida de la Constitución, 45, Barcelona, Spain",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ba/d6/30/dolceria-de-la-colmena.jpg?w=1000&h=-1&s=1"
+    },
+    {
+      "id": "3",
+      "name": "Valencia Bakery",
+      "address": "Paseo del Prado, 28, Valencia, Spain",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/e7/f8/55/ibienvenidos-a-cafe-madrid.jpg?w=1000&h=-1&s=1"
+    },
+    {
+      "id": "4",
+      "name": "Sevilla Bakery",
+      "address": "Calle Gran Vía, 22, Sevilla, Spain",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/49/04/4d/20180614-101245-largejpg.jpg?w=1000&h=-1&s=1"
+    },
+    {
+      "id": "5",
+      "name": "Bilbao Bakery",
+      "address": "Carrer de la Pau, 10, Bilbao, Spain",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/52/82/2d/llega-la-navidad.jpg?w=1000&h=-1&s=1"
+    }
+  ],
   "customers": [
     {
       "id": "1",
@@ -7,7 +39,8 @@
       "email": "alejandro.martin@gmail.com",
       "phone": "+34 612 345 678",
       "address": "Calle Mayor, 12, Madrid, Spain",
-      "avatar": "https://i.pravatar.cc/150?img=8"
+      "avatar": "https://i.pravatar.cc/150?img=8",
+      "locationId": "1"
     },
     {
       "id": "2",
@@ -16,7 +49,8 @@
       "email": "lucia.gomez@gmail.com",
       "phone": "+34 623 456 789",
       "address": "Avenida de la Constitución, 45, Barcelona, Spain",
-      "avatar": "https://i.pravatar.cc/150?img=5"
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "locationId": "2"
     },
     {
       "id": "3",
@@ -25,7 +59,8 @@
       "email": "carlos.fernandez@gmail.com",
       "phone": "+34 634 567 890",
       "address": "Paseo del Prado, 28, Valencia, Spain",
-      "avatar": "https://i.pravatar.cc/150?img=12"
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "locationId": "3"
     },
     {
       "id": "4",
@@ -34,7 +69,8 @@
       "email": "sofia.ruiz@gmail.com",
       "phone": "+34 645 678 901",
       "address": "Calle Gran Vía, 22, Sevilla, Spain",
-      "avatar": "https://i.pravatar.cc/150?img=32"
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "locationId": "4"
     },
     {
       "id": "5",
@@ -43,7 +79,309 @@
       "email": "mateo.navarro@gmail.com",
       "phone": "+34 656 789 012",
       "address": "Carrer de la Pau, 10, Bilbao, Spain",
-      "avatar": "https://i.pravatar.cc/150?img=57"
+      "avatar": "https://i.pravatar.cc/150?img=57",
+      "locationId": "5"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customerId": "1",
+      "productId": "203",
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "customerId": "2",
+      "productId": "202",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "customerId": "3",
+      "productId": "209",
+      "quantity": 3
+    },
+    {
+      "id": "4",
+      "customerId": "4",
+      "productId": "210",
+      "quantity": 1
+    },
+    {
+      "id": "5",
+      "customerId": "5",
+      "productId": "207",
+      "quantity": 2
+    },
+    {
+      "id": "6",
+      "customerId": "1",
+      "productId": "205",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "customerId": "2",
+      "productId": "208",
+      "quantity": 2
+    },
+    {
+      "id": "8",
+      "customerId": "3",
+      "productId": "206",
+      "quantity": 4
+    },
+    {
+      "id": "9",
+      "customerId": "4",
+      "productId": "204",
+      "quantity": 1
+    },
+    {
+      "id": "10",
+      "customerId": "5",
+      "productId": "202",
+      "quantity": 3
+    },
+    {
+      "id": "11",
+      "customerId": "1",
+      "productId": "207",
+      "quantity": 1
+    },
+    {
+      "id": "12",
+      "customerId": "2",
+      "productId": "209",
+      "quantity": 2
+    },
+    {
+      "id": "13",
+      "customerId": "3",
+      "productId": "210",
+      "quantity": 1
+    },
+    {
+      "id": "14",
+      "customerId": "4",
+      "productId": "203",
+      "quantity": 2
+    },
+    {
+      "id": "15",
+      "customerId": "5",
+      "productId": "208",
+      "quantity": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Bread",
+      "description": "A variety of freshly baked bread including whole wheat, sourdough, and more.",
+      "image": "https://images.unsplash.com/photo-1579697096985-41fe1430e5df?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "title": "Pastries",
+      "description": "Delicious pastries such as croissants, cinnamon rolls, and Danish pastries.",
+      "image": "https://images.unsplash.com/photo-1552632196-9442133181d3?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "title": "Drinks",
+      "description": "A selection of hot and cold drinks including coffee, tea, and smoothies.",
+      "image": "https://images.unsplash.com/photo-1527512666523-bb0e4389d842?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "4",
+      "title": "Cakes",
+      "description": "Tasty cakes including chocolate, red velvet, and carrot cakes.",
+      "image": "https://images.unsplash.com/photo-1556953410-b77c8b035596?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "5",
+      "title": "Sandwiches",
+      "description": "A variety of sandwiches such as chicken, ham, and veggie options.",
+      "image": "https://images.unsplash.com/photo-1630503941853-8c1b74c19660?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "products": [
+    {
+      "id": "201",
+      "name": "Whole Wheat Bread",
+      "price": 2.99,
+      "categoryId": "1",
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "202",
+      "name": "Baguette",
+      "price": 1.5,
+      "categoryId": "1",
+      "image": "https://images.unsplash.com/photo-1586443327882-6a63805ca1fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "203",
+      "name": "Sourdough",
+      "price": 3.2,
+      "categoryId": "1",
+      "image": "https://images.unsplash.com/photo-1624323209995-b617d99ce390?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "204",
+      "name": "Rye Bread",
+      "price": 2.8,
+      "categoryId": "1",
+      "image": "https://images.unsplash.com/photo-1548228623-13e55dd16984?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "205",
+      "name": "Ciabatta",
+      "price": 2.5,
+      "categoryId": "1",
+      "image": "https://images.unsplash.com/photo-1667386773920-c73f3b02a3d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "206",
+      "name": "Croissant",
+      "price": 1.2,
+      "categoryId": "2",
+      "image": "https://images.unsplash.com/photo-1567891026259-c133718572a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "207",
+      "name": "Pain au Chocolat",
+      "price": 1.5,
+      "categoryId": "2",
+      "image": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "208",
+      "name": "Cinnamon Roll",
+      "price": 2.5,
+      "categoryId": "2",
+      "image": "https://images.unsplash.com/photo-1604349347116-c9eeaf23700f?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "209",
+      "name": "Danish Pastry",
+      "price": 1.8,
+      "categoryId": "2",
+      "image": "https://images.unsplash.com/photo-1614205569927-1f104e088eee?q=80&w=2114&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "210",
+      "name": "Almond Croissant",
+      "price": 2,
+      "categoryId": "2",
+      "image": "https://images.unsplash.com/photo-1649542181703-33cc4f373b28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "211",
+      "name": "Cappuccino",
+      "price": 3,
+      "categoryId": "3",
+      "image": "https://images.unsplash.com/photo-1520223509509-001bc2f2d06b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "212",
+      "name": "Latte",
+      "price": 3.2,
+      "categoryId": "3",
+      "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "213",
+      "name": "Espresso",
+      "price": 2.5,
+      "categoryId": "3",
+      "image": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "214",
+      "name": "Mocha",
+      "price": 3.5,
+      "categoryId": "3",
+      "image": "https://images.unsplash.com/photo-1600658494306-814b9a13e63f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "215",
+      "name": "Iced Tea",
+      "price": 2,
+      "categoryId": "3",
+      "image": "https://images.unsplash.com/photo-1592099759599-24b131b8e824?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "216",
+      "name": "Chocolate Cake",
+      "price": 4,
+      "categoryId": "4",
+      "image": "https://images.unsplash.com/photo-1605807646983-377bc5a76493?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "217",
+      "name": "Vanilla Cake",
+      "price": 3.5,
+      "categoryId": "4",
+      "image": "https://images.unsplash.com/photo-1517928077714-297ebb50642f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "218",
+      "name": "Red Velvet Cake",
+      "price": 5,
+      "categoryId": "4",
+      "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "219",
+      "name": "Carrot Cake",
+      "price": 4.5,
+      "categoryId": "4",
+      "image": "https://images.unsplash.com/photo-1580822664294-f9462d112359?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "220",
+      "name": "Cheesecake",
+      "price": 4.8,
+      "categoryId": "4",
+      "image": "https://images.unsplash.com/photo-1635327173758-85badf17f995?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "221",
+      "name": "Chicken Sandwich",
+      "price": 5,
+      "categoryId": "5",
+      "image": "https://images.unsplash.com/photo-1612390701898-c71df1887259?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "222",
+      "name": "Ham Sandwich",
+      "price": 4.5,
+      "categoryId": "5",
+      "image": "https://images.unsplash.com/photo-1485451456034-3f9391c6f769?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "223",
+      "name": "Veggie Sandwich",
+      "price": 4,
+      "categoryId": "5",
+      "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "224",
+      "name": "Turkey Sandwich",
+      "price": 5.2,
+      "categoryId": "5",
+      "image": "https://images.unsplash.com/photo-1628191010210-a59de33e5941?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "225",
+      "name": "BLT Sandwich",
+      "price": 4.8,
+      "categoryId": "5",
+      "image": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }
