@@ -4,13 +4,13 @@ import './index.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import HomePage from './pages/HomePage'
-import CustomersPage from './pages/CustomersPage'
+import HomePage from './pages/customers/HomePage'
+import CustomersPage from './pages/customers/CustomersPage'
 import ContainerMain from './components/ContainerMain'
-import CustomerPage from './pages/CustomerPage'
-import CreateNewCustomerPage from './pages/CreateNewCustomerPage'
+import CustomerPage from './pages/customers/CustomerPage'
+import CreateNewCustomerPage from './pages/customers/CreateNewCustomerPage'
 import RootContextProvider from './context/RootContextProvider'
-import EditCustomerPage from './pages/EditCustomerPage'
+import EditCustomerPage from './pages/customers/EditCustomerPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { fetchCustomerById } from "../api/customerApi";
-import { Customer } from "../reducers/customersReducer";
-import styles from "../styles/CustomerPage.module.css";
+import { fetchCustomerById } from "../../api/customerApi";
+import { Customer } from "../../reducers/customersReducer";
+import styles from "../../styles/customers/CustomerPage.module.css";
 // @ts-ignore
 import BallTriangle from 'react-loading-components';
 

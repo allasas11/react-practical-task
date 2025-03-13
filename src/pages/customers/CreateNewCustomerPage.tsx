@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useCustomers } from '../context/CustomersPageContextProvider';
-import { Customer } from '../reducers/customersReducer';
-import styles from '../styles/CreateNewCustomerPage.module.css'
+import { useCustomers } from '../../context/CustomersPageContextProvider';
+import { Customer } from '../../reducers/customersReducer';
+import styles from '../../styles/customers/CreateNewCustomerPage.module.css'
 import { useNavigate } from 'react-router-dom';
 
 const CreateNewCustomerPage: React.FC = () => {

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
-import { useCustomers } from "../context/CustomersPageContextProvider"
-import styles from '../styles/CustomersList.module.css'
+import { useCustomers } from "../../context/CustomersPageContextProvider"
+import styles from '../../styles/customers/CustomersList.module.css'
 import CustomerItem from "./CustomerItem"
 
 const CustomersList:React.FC = () => {
@@ -23,7 +23,6 @@ const CustomersList:React.FC = () => {
                             <CustomerItem key={customer.id} customerItem={customer} />
                         ))}
                     </ul>
-
                 )}
             </div>
         </>

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"; 
-import { Customer } from "../reducers/customersReducer"; 
-import { useCustomers } from "../context/CustomersPageContextProvider";
+import { Customer } from "../../reducers/customersReducer"; 
+import { useCustomers } from "../../context/CustomersPageContextProvider";
+import styles from '../../styles/customers/EditCustomerPage.module.css'
+
 
 const EditCustomerPage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -42,7 +44,7 @@ const EditCustomerPage: React.FC = () => {
 
     return (
         <div>
-            <h1>Edit Customer</h1>
+            <h1 className={styles.pageTitle}>Edit Customer</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>

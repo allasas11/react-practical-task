@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { useCustomers } from "../context/CustomersPageContextProvider"
-import { Customer } from "../reducers/customersReducer"
-import styles from '../styles/CustomerItem.module.css'
+import { useCustomers } from "../../context/CustomersPageContextProvider"
+import { Customer } from "../../reducers/customersReducer"
+import styles from '../../styles/customers/CustomerItem.module.css'
 
 type CustomerItemProps = {
     customerItem: Customer;

@@ -1,7 +1,7 @@
 
-import CustomersList from '../components/CustomersList';
-import { CustomersPageContextProvider } from '../context/CustomersPageContextProvider';
-import styles from '../styles/CustomersPage.module.css'
+import CustomersList from '../../components/customers/CustomersList';
+import { CustomersPageContextProvider } from '../../context/CustomersPageContextProvider';
+import styles from '../../styles/customers/CustomersPage.module.css'
 
 const CustomersPage: React.FC = () => {
     return (
