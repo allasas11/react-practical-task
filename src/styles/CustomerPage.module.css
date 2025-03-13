@@ -1,0 +1,14 @@
+.customerItem {
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+  }
+  
+.customerItemContainer {
+    padding: 1rem;
+    max-width: 300px;
+    text-align: left; 
+}
+  
+
+

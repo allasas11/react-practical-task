@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { useCustomers } from "../context/CustomersPageContextProvider"
 import styles from '../styles/CustomersList.module.css'
 import CustomerItem from "./CustomerItem"
@@ -9,6 +10,10 @@ const CustomersList:React.FC = () => {
     return (
         <>
             <h2 className={styles.pageTitle}>{customers.length > 0? 'Customers' : 'No customers'}</h2>
+
+            <div className={styles.createLinkContainer}>
+                <NavLink to="/create-new-customer" className={({ isActive }) => isActive ? styles.activeLink : styles.createLink} > Create new customer </NavLink>
+            </div>
 
             <div className={styles.customersContainer}>
                 {customers.length > 0 && (

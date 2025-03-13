@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useCustomers } from "../context/CustomersPageContextProvider"
 import { Customer } from "../reducers/customersReducer"
 import styles from '../styles/CustomerItem.module.css'
@@ -12,14 +13,16 @@ const CustomerItem: React.FC<CustomerItemProps> = ({ customerItem }) => {
     const { deleteCustomer } = useCustomers()
 
     const handleDelete = () => {
-        deleteCustomer(id)
+        deleteCustomer(Number(id))
     };
 
     return (
         <li className={styles.customerItemContainer}>
             <img src={avatar} alt={name} className={styles.avatar} />
             <div className={styles.customerDetails}>
-                <h3>{name}</h3>
+                <h3>
+                    <NavLink to={`/customers/${id}`}>{name}</NavLink>
+                </h3>
                 <h4>@{username}</h4>
                 <p>Email: {email}</p>
                 <p>Phone: {phone}</p>
