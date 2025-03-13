@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Customer } from "../../reducers/customersReducer"; 
 import { useCustomers } from "../../context/CustomersPageContextProvider";
 import styles from '../../styles/customers/EditCustomerPage.module.css'
+import CustomerForm from "../../components/customers/CustomerForm";
 
 
 const EditCustomerPage: React.FC = () => {
@@ -45,69 +46,7 @@ const EditCustomerPage: React.FC = () => {
     return (
         <div>
             <h1 className={styles.pageTitle}>Edit Customer</h1>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={customerData.name}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="username">Username:</label>
-                    <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        value={customerData.username}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={customerData.email}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="phone">Phone:</label>
-                    <input
-                        type="text"
-                        id="phone"
-                        name="phone"
-                        value={customerData.phone}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="address">Address:</label>
-                    <input
-                        type="text"
-                        id="address"
-                        name="address"
-                        value={customerData.address}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="avatar">Avatar:</label>
-                    <input
-                        type="text"
-                        id="avatar"
-                        name="avatar"
-                        value={customerData.avatar}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <button type="submit">Save Changes</button>
-            </form>
+            <CustomerForm formData={customerData} handleChange={handleInputChange} handleSubmit={handleSubmit} />
         </div>
     );
 };
