@@ -10,6 +10,7 @@ import ContainerMain from './components/ContainerMain'
 import CustomerPage from './pages/CustomerPage'
 import CreateNewCustomerPage from './pages/CreateNewCustomerPage'
 import RootContextProvider from './context/RootContextProvider'
+import EditCustomerPage from './pages/EditCustomerPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,7 +22,8 @@ createRoot(document.getElementById('root')!).render(
               <Route index element={<HomePage />} />
               <Route path="/customers" element={<CustomersPage />} />
               <Route path="/customers/:id" element={<CustomerPage />} />
-              <Route path="/create-new-customer" element={<CreateNewCustomerPage />} />
+              <Route path="/create-customer" element={<CreateNewCustomerPage />} />
+              <Route path="/customers/:id/edit" element={<EditCustomerPage />} />
             </Routes>
           </ContainerMain>
         <Footer />

@@ -8,6 +8,7 @@ type CustomersPageContextType = {
     customers: Customer[];
     deleteCustomer: (id: number) => void;
     addNewCustomer: (newCustomer: Customer) => void;
+    editCustomer: (updatedCustomer: Customer) => void;
 };
 
 const CustomersPageContext = createContext<CustomersPageContextType | undefined>(undefined);
@@ -43,6 +44,24 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
         }
     };
 
+
+    const editCustomer = async (updatedCustomer: Customer) => {
+        try {
+            // Send PUT request to update the customer
+            await axios.put(`${API_URL}/${updatedCustomer.id}`, updatedCustomer);
+
+            // Dispatch the edit action to update the state
+            dispatch({ type: CustomerActionTypes.EDIT_CUSTOMER, payload: updatedCustomer });
+
+            // Re-fetch the updated customers data
+            const customersData = await fetchCustomers();
+            dispatch({ type: CustomerActionTypes.SET_CUSTOMERS, payload: customersData });
+        } catch (error) {
+            console.error('Error editing customer:', error);
+        }
+    };
+
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -59,7 +78,8 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
     const ctxValue: CustomersPageContextType = {
         customers,
         deleteCustomer,
-        addNewCustomer
+        addNewCustomer,
+        editCustomer
     };
 
     return (
