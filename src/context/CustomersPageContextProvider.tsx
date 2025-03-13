@@ -1,11 +1,13 @@
 import { createContext, ReactNode, useContext, useEffect, useReducer } from "react"
 import { Customer, CustomerActionTypes, customerInitialState, customerReducer } from "../reducers/customersReducer"
-import { API_URL, fetchCustomers } from "../api/customerApi";
+import { fetchCustomers } from "../api/customerApi";
 import axios from "axios";
+import { API_URL } from "../config/config";
 
 type CustomersPageContextType = {
     customers: Customer[];
     deleteCustomer: (id: number) => void;
+    addNewCustomer: (newCustomer: Customer) => void;
 };
 
 const CustomersPageContext = createContext<CustomersPageContextType | undefined>(undefined);
@@ -30,6 +32,17 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
         }
     };
 
+    const addNewCustomer = async (newCustomer: Customer) => {
+        try {
+            await axios.post(API_URL, newCustomer);
+            dispatch({ type: CustomerActionTypes.ADD_NEW_CUSTOMER, payload: newCustomer });
+            const customersData = await fetchCustomers();
+            dispatch({ type: CustomerActionTypes.SET_CUSTOMERS, payload: customersData });
+        } catch (error) {
+            console.error('Error adding new customer:', error);
+        }
+    };
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -45,7 +58,8 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
 
     const ctxValue: CustomersPageContextType = {
         customers,
-        deleteCustomer
+        deleteCustomer,
+        addNewCustomer
     };
 
     return (

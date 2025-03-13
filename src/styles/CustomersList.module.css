@@ -12,3 +12,20 @@
     gap: 1rem;
     justify-content: center;
 }
+
+.createLinkContainer {
+    margin: 1rem 0rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.createLink {
+    background-color: seagreen;
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+}
+
+.createLink:hover {
+    color: lightgreen;
+}
