@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "name": "Sofía Ruiz",
+      "name": "Esperanza Ruiz",
       "username": "sofiaR",
       "email": "sofia.ruiz@gmail.com",
       "phone": "+34 645 678 901",
@@ -44,15 +44,6 @@
       "phone": "+34 656 789 012",
       "address": "Carrer de la Pau, 10, Bilbao, Spain",
       "avatar": "https://i.pravatar.cc/150?img=57"
-    },
-    {
-      "id": "6",
-      "name": "Jose Romero",
-      "username": "joseR",
-      "email": "jose.romero@gmail.com",
-      "phone": "+34 706 250 960",
-      "address": "San jose, Madrid ",
-      "avatar": "https://i.pravatar.cc/150?img=02"
     }
   ]
 }
