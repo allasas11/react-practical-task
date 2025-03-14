@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../../styles/customers/CustomerForm.module.css';
 
-// Define the type for the props that CustomerForm will receive
 interface CustomerFormProps {
     formData: {
         name: string;
@@ -13,9 +12,10 @@ interface CustomerFormProps {
     };
     handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleSubmit: (e: React.FormEvent) => void;
+    buttonText: string; 
 }
 
-const CustomerForm: React.FC<CustomerFormProps> = ({ formData, handleChange, handleSubmit }) => {
+const CustomerForm: React.FC<CustomerFormProps> = ({ formData, handleChange, handleSubmit, buttonText }) => {
     return (
         <div className={styles.customerFormContainer}>
             <form onSubmit={handleSubmit}>
@@ -98,7 +98,7 @@ const CustomerForm: React.FC<CustomerFormProps> = ({ formData, handleChange, han
                     />
                 </div>
 
-                <button type="submit">Create Customer</button>
+                <button type="submit">{buttonText}</button>
             </form>
         </div>
     );

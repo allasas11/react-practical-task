@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { CustomersPageContextProvider } from './CustomersPageContextProvider';
+import { CategoriesPageContextProvider } from './CategoriesPageContextProvider';
 
 interface RootContextProviderProps {
     children: ReactNode;
@@ -8,7 +9,9 @@ interface RootContextProviderProps {
 const RootContextProvider: React.FC<RootContextProviderProps> = ({ children }) => {
     return (
         <CustomersPageContextProvider>
-            {children}
+            <CategoriesPageContextProvider>
+                {children}
+            </CategoriesPageContextProvider>
         </CustomersPageContextProvider>
     );
 };
