@@ -12,7 +12,16 @@ const Header:React.FC = () => {
             <NavLink to="/" end>Home</NavLink>
           </li>
           <li>
+            <NavLink to="/locaitons">Locations</NavLink>
+          </li>
+          <li>
             <NavLink to="/customers">Customers</NavLink>
+          </li>
+          <li>
+            <NavLink to="/categories">Categories</NavLink>
+          </li>
+          <li>
+            <NavLink to="/products">Products</NavLink>
           </li>
         </ul>
       </nav>
