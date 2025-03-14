@@ -57,7 +57,7 @@ const CreateNewCustomerPage: React.FC = () => {
         <div>
             <h1>Create New Customer</h1>
             <div className={styles.formContainer}>
-                <CustomerForm formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />
+                <CustomerForm formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} buttonText="Create Customer" />
             </div>
         </div>
     );

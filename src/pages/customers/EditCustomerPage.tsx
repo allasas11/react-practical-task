@@ -46,7 +46,7 @@ const EditCustomerPage: React.FC = () => {
     return (
         <div>
             <h1 className={styles.pageTitle}>Edit Customer</h1>
-            <CustomerForm formData={customerData} handleChange={handleInputChange} handleSubmit={handleSubmit} />
+            <CustomerForm formData={customerData} handleChange={handleInputChange} handleSubmit={handleSubmit} buttonText="Save changes" />
         </div>
     );
 };

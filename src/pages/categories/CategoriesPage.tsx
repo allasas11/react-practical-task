@@ -1,8 +1,16 @@
-import React from "react"
 
-const CategoriesPage:React.FC = () => {
+import CategoriesList from '../../components/categories/CategoriesList';
+import { CategoriesPageContextProvider } from '../../context/CategoriesPageContextProvider';
+import styles from '../../styles/categories/CategoriesPage.module.css';
+
+const CategoriesPage: React.FC = () => {
     return (
-        <h1>CategoriesPage</h1>
-    )
-}
-export default CategoriesPage
+        <CategoriesPageContextProvider>
+            <div className={styles.categoriesContainer}>
+                <CategoriesList />
+            </div>
+        </CategoriesPageContextProvider>
+    );
+};
+
+export default CategoriesPage;

@@ -23,7 +23,7 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
 
     const deleteCustomer = async (id: number) => {
         try {
-            await axios.delete(`${API_URL}/${id}`)
+            await axios.delete(`${API_URL}/customers/${id}`)
             dispatch({ type: CustomerActionTypes.DELETE_CUSTOMER, payload: id })
     
             const customersData = await fetchCustomers();
@@ -35,7 +35,7 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
 
     const addNewCustomer = async (newCustomer: Customer) => {
         try {
-            await axios.post(API_URL, newCustomer);
+            await axios.post(`${API_URL}/customers`, newCustomer);
             dispatch({ type: CustomerActionTypes.ADD_NEW_CUSTOMER, payload: newCustomer });
             const customersData = await fetchCustomers();
             dispatch({ type: CustomerActionTypes.SET_CUSTOMERS, payload: customersData });
@@ -44,23 +44,17 @@ export const CustomersPageContextProvider: React.FC<CustomersPageContextProvider
         }
     };
 
-
     const editCustomer = async (updatedCustomer: Customer) => {
         try {
-            // Send PUT request to update the customer
-            await axios.put(`${API_URL}/${updatedCustomer.id}`, updatedCustomer);
-
-            // Dispatch the edit action to update the state
+            await axios.put(`${API_URL}/customers/${updatedCustomer.id}`, updatedCustomer);
             dispatch({ type: CustomerActionTypes.EDIT_CUSTOMER, payload: updatedCustomer });
 
-            // Re-fetch the updated customers data
             const customersData = await fetchCustomers();
             dispatch({ type: CustomerActionTypes.SET_CUSTOMERS, payload: customersData });
         } catch (error) {
             console.error('Error editing customer:', error);
         }
     };
-
 
     useEffect(() => {
         const fetchData = async () => {
