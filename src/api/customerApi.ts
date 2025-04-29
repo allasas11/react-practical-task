@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Customer } from '../reducers/customersReducer'
-import { API_URL } from '../config/config';
+import { API_URL } from '../config/config'
 
 
 export const fetchCustomers = async (): Promise<Customer[]> => {

@@ -30,28 +30,28 @@ createRoot(document.getElementById('root')!).render(
       <RootContextProvider>
         <Header />
           <ContainerMain>
-          <Routes>
-              <Route index element={<HomePage />} />
-              
-              <Route path="/locations" element={<LocationsPage />} />
-              <Route path="/locations/:id" element={<LocationPage />} />
-              <Route path="/create-location" element={<CreateLocationPage />} />
-              <Route path="/locations/:id/edit" element={<EditLocationPage />} />
+            <Routes>
+                <Route index element={<HomePage />} />
+                
+                <Route path="/locations" element={<LocationsPage />} />
+                <Route path="/locations/:id" element={<LocationPage />} />
+                <Route path="/create-location" element={<CreateLocationPage />} />
+                <Route path="/locations/:id/edit" element={<EditLocationPage />} />
 
-              <Route path="/customers" element={<CustomersPage />} />
-              <Route path="/customers/:id" element={<CustomerPage />} />
-              <Route path="/create-customer" element={<CreateNewCustomerPage />} />
-              <Route path="/customers/:id/edit" element={<EditCustomerPage />} />
+                <Route path="/customers" element={<CustomersPage />} />
+                <Route path="/customers/:id" element={<CustomerPage />} />
+                <Route path="/create-customer" element={<CreateNewCustomerPage />} />
+                <Route path="/customers/:id/edit" element={<EditCustomerPage />} />
 
-              <Route path="/categories" element={<CategoriesPage />} />
-              <Route path="/categories/:id" element={<CategoryPage />} />
-              <Route path="/create-category" element={<CreateNewCategoryPage />} />
-              <Route path="/categories/:id/edit" element={<EditCategoryPage />} />
+                <Route path="/categories" element={<CategoriesPage />} />
+                <Route path="/categories/:id" element={<CategoryPage />} />
+                <Route path="/create-category" element={<CreateNewCategoryPage />} />
+                <Route path="/categories/:id/edit" element={<EditCategoryPage />} />
 
-              <Route path="/products" element={<ProductsPage />} />
-              <Route path="/products/:id" element={<ProductPage />} />
-              <Route path="/create-product" element={<CreateNewProductPage />} />
-              <Route path="/products/:id/edit" element={<EditProductPage />} />
+                <Route path="/products" element={<ProductsPage />} />
+                <Route path="/products/:id" element={<ProductPage />} />
+                <Route path="/create-product" element={<CreateNewProductPage />} />
+                <Route path="/products/:id/edit" element={<EditProductPage />} />
             </Routes>
             
           </ContainerMain>
