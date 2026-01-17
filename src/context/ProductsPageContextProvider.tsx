@@ -1,8 +1,9 @@
 import { createContext, ReactNode, useContext, useEffect, useReducer } from "react";
 import { Product, ProductActionTypes, productInitialState, productReducer } from "../reducers/productsReducer";
-import { fetchProducts } from "../api/productsApi";
+
 import axios from "axios";
 import { API_URL } from "../config/config";
+import { fetchProducts } from "../api/productsApi";
 
 type ProductsPageContextType = {
     products: Product[];
