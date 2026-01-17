@@ -3,3 +3,12 @@
     list-style: none;
     text-align: center;
 }
+
+.customerItemContainer img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid seagreen;
+}

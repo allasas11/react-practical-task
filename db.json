@@ -81,6 +81,15 @@
       "address": "Carrer de la Pau, 10, Bilbao, Spain",
       "avatar": "https://i.pravatar.cc/150?img=57",
       "locationId": "5"
+    },
+    {
+      "id": "6",
+      "name": "Jack",
+      "username": "Russel",
+      "email": "jackrussel@gmail.com",
+      "phone": "+37062577777",
+      "address": "Jaunimo g.",
+      "avatar": "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg"
     }
   ],
   "orders": [
