@@ -12,7 +12,7 @@ const Header:React.FC = () => {
             <NavLink to="/" end>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/locaitons">Locations</NavLink>
+            <NavLink to="/locations">Locations</NavLink>
           </li>
           <li>
             <NavLink to="/customers">Customers</NavLink>

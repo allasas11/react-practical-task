@@ -3,8 +3,7 @@ import { NavLink, useParams } from "react-router-dom";
 import { fetchCustomerById } from "../../api/customerApi";
 import { Customer } from "../../reducers/customersReducer";
 import styles from "../../styles/customers/CustomerPage.module.css";
-// @ts-ignore
-import BallTriangle from 'react-loading-components';
+import Skeleton from 'react-loading-skeleton';
 
 const CustomerPage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -20,7 +19,7 @@ const CustomerPage: React.FC = () => {
                 console.log("Fetched Customer Data:", customerData);
                 setCustomer(customerData);
             } catch (error) {
-                setError("Failed to fetch customer details.");
+                setError(`Failed to fetch customer details:` + error);
             } finally {
                 setLoading(false);
             }
@@ -28,7 +27,7 @@ const CustomerPage: React.FC = () => {
         getCustomer();
     }, [id]);
 
-    if (loading) return <BallTriangle width={100} height={100} color="#90EE90" />;
+    if (loading) return <Skeleton baseColor="seagreen" highlightColor="darkslategray" height={400} width={400} />;
     if (error) return <p>{error}</p>;
     if (!customer) return <p>No customer found.</p>;
 

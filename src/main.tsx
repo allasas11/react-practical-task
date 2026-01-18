@@ -21,8 +21,9 @@ import CreateNewProductPage from './pages/products/CreateNewProductPage'
 import EditProductPage from './pages/products/EditProductPage'
 import LocationsPage from './pages/locations/LocationsPage'
 import LocationPage from './pages/locations/LocationPage'
-import CreateLocationPage from './pages/locations/CreateLocationPage '
 import EditLocationPage from './pages/locations/EditLocationPage'
+import CreateLocationPage from './pages/locations/CreateLocationPage '
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
