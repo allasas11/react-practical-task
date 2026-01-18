@@ -1,12 +1,16 @@
 import React from "react";
 import styles from '../../styles/locations/LocationsPage.module.css'
+import { LocationsPageContextProvider } from "../../context/LocationsPageContextProvider";
+import LocationsList from "../../components/locations/LocationsList";
 
 
 const LocationsPage:React.FC = () => {
     return (
-        <div className={styles.mainContainer}>
-            <h1> Locations </h1>
-        </div>
+        <LocationsPageContextProvider>
+            <div className={styles.locationsContainer}>
+                <LocationsList />
+            </div>
+        </LocationsPageContextProvider>
     )
 } 
 
