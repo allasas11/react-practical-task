@@ -1,0 +1,86 @@
+$primary-color: lightgreen;
+$background-color: dimgray;
+$border-color: #ddd;
+$success-color: #28a745;
+$danger-color: #dc3545;
+
+@use "sass:color";
+
+.locationItemContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    background-color: $background-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.locationImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.locationDetails {
+    flex-grow: 1;
+
+    h3 {
+        margin: 0 0 5px;
+        font-size: 18px;
+        color: $primary-color;
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: $primary-color;
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.editButton {
+    background-color: $success-color;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: color.adjust($success-color, $lightness: -10%);
+    }
+}
+
+.deleteButton {
+    background-color: $danger-color;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: color.adjust($danger-color, $lightness: -15%);
+    }
+}

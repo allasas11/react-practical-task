@@ -3,5 +3,7 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "typeRoots": ["./node_modules/@types", "./node_modules/@types/react-loading-components"],
+  
 }

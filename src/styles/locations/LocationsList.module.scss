@@ -1,0 +1,44 @@
+$primary-color: lightgreen;
+$secondary-color: seagreen;
+$background-hover: darkslategrey;
+$text-color: whitesmoke;
+
+.pageTitle {
+    text-align: center;
+    color: $primary-color;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+.locationsWrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.createLinkContainer {
+    margin: 1rem 0;
+    text-align: center;
+    padding: 1rem;
+
+    .createLink {
+        background-color: $secondary-color;
+        color: $text-color;
+        text-decoration: none;
+        display: inline-block; 
+        padding: 0.5rem 1rem; 
+        border-radius: 8px; 
+        text-align: center;  
+        cursor: pointer; 
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $background-hover;
+            color: $primary-color;
+        }
+    }
+}

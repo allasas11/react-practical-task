@@ -20,7 +20,8 @@ const CategoryPage: React.FC = () => {
                 console.log("Fetched Category Data:", categoryData);
                 setCategory(categoryData);
             } catch (error) {
-                setError("Failed to fetch category details.");
+                console.error("Unexpected Error:", error)
+                setError("Failed to fetch category details");
             } finally {
                 setLoading(false);
             }

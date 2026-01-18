@@ -28,7 +28,7 @@
       "id": "5",
       "name": "Bilbao Bakery",
       "address": "Carrer de la Pau, 10, Bilbao, Spain",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/52/82/2d/llega-la-navidad.jpg?w=1000&h=-1&s=1"
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ba/d6/30/dolceria-de-la-colmena.jpg?w=1000&h=-1&s=1"
     }
   ],
   "customers": [
@@ -187,9 +187,9 @@
   "categories": [
     {
       "id": "1",
-      "title": "Bread",
-      "description": "A variety of freshly baked bread including whole wheat, sourdough, and more.",
-      "image": "https://images.unsplash.com/photo-1579697096985-41fe1430e5df?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "name": "Madrid ",
+      "address": "Calle Mayor, 12, Madrid, Spain",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/e9/d0/ad/entrada-y-barra.jpg?w=1000&h=-1&s=1"
     },
     {
       "id": "2",
